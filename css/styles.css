@@ -456,6 +456,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  width: 100%;
   column-gap: 30px;
 }
 
@@ -463,8 +464,8 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 170px;
-  height: 92px;
+  flex-basis: calc((100% - 5 * 30px) / 6);
+  padding: 16px 32px;
   border: 1px solid currentColor;
   border-radius: 4px;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -478,6 +479,7 @@ body {
 .clients-item:hover,
 .clients-item:focus {
   color: var(--accent-color);
+  outline: transparent;
 }
 /*-------------------- footer-------------- */
 
@@ -553,6 +555,7 @@ body {
 .footer-social-link:hover,
 .footer-social-link:focus {
   background-color: var(--accent-color);
+  outline: transparent;
 }
 
 .footer-social-list {
@@ -594,6 +597,7 @@ body {
   color: var(--white-text-color);
   background-color: var(--accent-color);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  outline: transparent;
 }
 
 .button.secondary.current {
@@ -645,6 +649,7 @@ body {
 .portfolio:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
+  outline: transparent;
 }
 
 .portfolio:hover .overlay,
